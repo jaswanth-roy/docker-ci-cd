@@ -1,9 +1,9 @@
-sudo: required
-services:
+#sudo: required
+#services:
     - docker
-before_install:
+#before_install:
     - docker build -t dockercd -f Dockerfile.dev .
-script:
+#script:
    - docker run -e CI=true dockercd npm run test
 
 
@@ -14,10 +14,10 @@ deploy:
     
   secret_access_key:
     secure: "$SECRET_ACCES_KEY"
-  region: "us-east-1"
-  app: "docker_pipe_1"
-  env: "Dockerpipe1-env"
-  bucket_name: "elasticbeanstalk-us-east-1-265792109415"
-  bucket_path: "docker_pipe_1"
+  #region: "us-east-1"
+  #app: "docker_pipe_1"
+  #env: "Dockerpipe1-env"
+  #bucket_name: "elasticbeanstalk-us-east-1-265792109415"
+ # bucket_path: "docker_pipe_1"
   on:
-    branch: master
+   # branch: master
