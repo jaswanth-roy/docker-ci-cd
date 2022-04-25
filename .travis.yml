@@ -15,9 +15,9 @@ deploy:
   secret_access_key:
     secure: "$SECRET_ACCES_KEY"
   region: "us-east-1"
-  app: "docker_pipe"
-  env: "Dockerpipe-env-1"
+  app: "docker_pipe_1"
+  env: "Dockerpipe1-env"
   bucket_name: "elasticbeanstalk-us-east-1-265792109415"
-  bucket_path: "docker_pipe"
+  bucket_path: "docker_pipe_1"
   on:
     branch: master
